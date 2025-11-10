@@ -8,17 +8,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-  steps:
+    steps:
     - name: Checkout code
       uses: actions/checkout@v5
 
     - name: Setup Nodejs
       uses: actions/setup-node@v3
       with:
-        node-verison: 16
+        node-version: 16
 
     - name: Install Dependencies
       run: npm install
 
-    - name: Run  Test
+    - name: Run Test
       run: npm test
